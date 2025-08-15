@@ -1,6 +1,6 @@
-import WikipediaDataCollector as wpdc
-import BaseDataCollector as bdc
-import SemanticSplitter as ssplit
+import data_collector.WikipediaDataCollector as wpdc
+import data_collector.BaseDataCollector as bdc
+import chunker.SemanticSplitter as ssplit
 
 data_collector:bdc.BaseDataCollector = wpdc.WikipediaDataCollector()
 result = data_collector.get_data()

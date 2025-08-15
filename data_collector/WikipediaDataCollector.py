@@ -1,4 +1,4 @@
-import BaseDataCollector as bdc
+import data_collector.BaseDataCollector as bdc
 import requests
 from typing import List
 from wwi_data_model import WWIDataModel
