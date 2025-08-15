@@ -10,7 +10,7 @@ titles = ["World War 1", "The Great War", "1914-1918", "First World War"]
 class WikipediaDataCollector(bdc.BaseDataCollector):
     def __init__(self):
         self.WIKI_API_URL =  "https://en.wikipedia.org/w/api.php"
-        self.HEADERS = {"User-Agent": "WWI-RAG-Bot/1.0 (1kaustubhkakade@gmail.com)"}
+        self.HEADERS = {"User-Agent": "WWI-RAG-Bot/1.0 (email)"}
 
     def get_data(self):
         all_wiki_page_titles = set()
