@@ -1,4 +1,4 @@
-from BaseVecDB import BaseVecDB;
+from vec_db.BaseVecDB import BaseVecDB;
 from typing import List
 from langchain_core.documents import Document
 import chromadb
