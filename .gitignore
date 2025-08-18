@@ -1,4 +1,4 @@
 .venv
-chroma_wwi
+chroma_wwi_semantic_chunks_default_embedding
 .env
 __pycache__
