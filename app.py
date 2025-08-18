@@ -1,5 +1,5 @@
-from BaseVecDB import BaseVecDB
-from ChromaVecDB import ChromaVecDB
+from vec_db.BaseVecDB import BaseVecDB
+from vec_db.ChromaVecDB import ChromaVecDB
 import data_collector.WikipediaDataCollector as wpdc
 import data_collector.BaseDataCollector as bdc
 import chunker.SemanticSplitter as ssplit
