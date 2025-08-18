@@ -1,3 +1,5 @@
+from BaseVecDB import BaseVecDB
+from ChromaVecDB import ChromaVecDB
 import data_collector.WikipediaDataCollector as wpdc
 import data_collector.BaseDataCollector as bdc
 import chunker.SemanticSplitter as ssplit
@@ -8,4 +10,8 @@ text_result = [data.text for data in result]
 splitter  =  ssplit.SemanticSplitter()
 documents = splitter.get_chunks(text_result)
 
-print(documents)
+db_name = "chroma_wwi_semantic_chunks_default_embedding"
+
+vecDB:BaseVecDB = ChromaVecDB(db_name)
+
+vecDB.add_documents(documents)
