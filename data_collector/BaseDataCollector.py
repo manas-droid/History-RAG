@@ -1,6 +1,6 @@
 from abc import ABC, abstractmethod
 import re
-from wwi_data_model import WWIDataModel
+from data_model.wwi_data_model import WWIDataModel
 from typing import List
 
 class BaseDataCollector(ABC):

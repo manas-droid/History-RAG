@@ -1,7 +1,7 @@
 import data_collector.BaseDataCollector as bdc
 import requests
 from typing import List
-from wwi_data_model import WWIDataModel
+from data_model.wwi_data_model import WWIDataModel
 import time
 
 
