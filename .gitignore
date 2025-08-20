@@ -2,3 +2,4 @@
 chroma_wwi_semantic_chunks_default_embedding
 .env
 __pycache__
+query_result.json

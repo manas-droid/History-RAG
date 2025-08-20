@@ -17,3 +17,6 @@ class ChromaVecDB(BaseVecDB):
             doc_id+=1
             print(f"Size of the doc: {len(doc.page_content)}")
             self.collection.add(ids=[str(doc_id)], documents=[doc.page_content])
+    
+    def get_related_data(self, query:List[str], n_results:int = 10):
+        return self.collection.query(query_texts=query, n_results=n_results)
