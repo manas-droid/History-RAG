@@ -21,3 +21,4 @@ db_name = "chroma_wwi_semantic_chunks_default_embedding"
 vecDB:BaseVecDB = ChromaVecDB(db_name)
 vecDB.add_documents(gutendex_documents)
 vecDB.add_documents(documents)
+
