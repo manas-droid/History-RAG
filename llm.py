@@ -29,8 +29,8 @@ user_question = "What were the causes of World War 1 apart from Franz Ferdinand'
 context = get_context(user_question)
 
 full_prompt = f"""
-Act like you are a historian and answer the mentioned question:
-
+Act like you are a historian and answer the mentioned question by considering the below context:
+context: {context}
 question: 
 {user_question}
 """
