@@ -22,26 +22,23 @@ def get_context(user_question:str)->str:
         point+=1
     
     return context
+print(__name__)
 
 
-user_question = "What were the causes of World War 1 apart from Franz Ferdinand's murder?"
+if __name__ == "__main__":
 
-context = get_context(user_question)
+    user_question = "What were the causes of World War 1 apart from Franz Ferdinand's murder?"
 
-full_prompt = f"""
-Act like you are a historian and answer the mentioned question by considering the below context:
-context: {context}
-question: 
-{user_question}
-"""
+    context = get_context(user_question)
 
-
-response = ask_ollama(prompt=full_prompt)
-
-print(f"response: {response}")
+    full_prompt = f"""
+    Act like you are a historian and answer the mentioned question by considering the below context:
+    context: {context}
+    question: 
+    {user_question}
+    """
 
 
+    response = ask_ollama(prompt=full_prompt)
 
-
-
-
+    print(f"response: {response}")
